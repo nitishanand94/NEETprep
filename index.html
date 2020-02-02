@@ -27,9 +27,9 @@
 
   amplitude.getInstance().init("97e452717ae7e853bef086d45b6a4d4f");
   amplitude.getInstance().logEvent('EVENT_INDEX');
-  var clickonLinkA = function() { 
-    amplitude.logEvent('Clicked on Link',null, function() { window.location='https://nitishanand94.github.io/NEETprep/Rocket.html';});
-  };
+ 
+  function tracklink('https://nitishanand94.github.io/NEETprep/Rocket.html') {
+  amplitude.trackEvent('pageviews', {'https://nitishanand94.github.io/NEETprep/Rocket.html': link_url});
 </script>
 <head>
 <title>Page Title</title>
